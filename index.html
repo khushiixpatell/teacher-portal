@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LessonLink | Teacher Resource Portal</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<a class="skip-link" href="#main-content">Skip to main content</a>
+
+<header class="site-header">
+  <nav class="navbar" aria-label="Main navigation">
+    <div class="logo">LessonLink</div>
+    <div class="nav-actions">
+      <a href="#resources">Resources</a>
+      <a href="#features">Features</a>
+      <button class="login-btn" type="button">Teacher Login</button>
+    </div>
+  </nav>
+
+  <section class="hero">
+    <div class="hero-content">
+      <p class="eyebrow">Accessible education resource platform</p>
+      <h1>Helping teachers find quality lesson plans faster.</h1>
+      <p class="hero-text">Search, filter, preview, and organize curriculum-aligned teaching resources through a clean and accessible web experience.</p>
+      <a class="primary-btn" href="#resources">Explore Resources</a>
+    </div>
+
+    <aside class="hero-card" aria-label="Platform summary">
+      <p class="welcome">Welcome back, Teacher</p>
+      <h2>Resource Dashboard</h2>
+      <div class="mini-stat"><span>124</span> Lesson Plans</div>
+      <div class="mini-stat"><span>18</span> Subjects</div>
+      <div class="mini-stat"><span>2,400+</span> Downloads</div>
+    </aside>
+  </section>
+</header>
+
+<main id="main-content">
+  <section class="stats-grid" aria-label="Dashboard metrics">
+    <article class="stat-card"><span>124</span><p>Lesson Plans</p></article>
+    <article class="stat-card"><span>18</span><p>Subject Areas</p></article>
+    <article class="stat-card"><span>94%</span><p>Teacher Satisfaction</p></article>
+    <article class="stat-card"><span>WCAG</span><p>Accessibility Focused</p></article>
+  </section>
+
+  <section id="features" class="features-section" aria-labelledby="features-heading">
+    <p class="eyebrow">Built for educators</p>
+    <h2 id="features-heading">A simple platform designed around teacher needs.</h2>
+
+    <div class="feature-grid">
+      <article>
+        <h3>Smart Search</h3>
+        <p>Find resources by title, subject, grade level, duration, and teaching format.</p>
+      </article>
+
+      <article>
+        <h3>Curriculum Friendly</h3>
+        <p>Resources are organized clearly so teachers can quickly match lessons to classroom needs.</p>
+      </article>
+
+      <article>
+        <h3>Accessible Design</h3>
+        <p>Uses semantic HTML, visible focus states, form labels, and live search result updates.</p>
+      </article>
+    </div>
+  </section>
+
+  <section id="resources" class="resource-section" aria-labelledby="filters-heading">
+    <div class="section-heading">
+      <p class="eyebrow">Resource library</p>
+      <h2 id="filters-heading">Search classroom resources</h2>
+      <p>Filter the library to quickly locate lesson plans that match a specific subject and grade level.</p>
+    </div>
+
+    <form class="filter-panel" id="filterForm">
+      <div class="form-group">
+        <label for="searchInput">Keyword</label>
+        <input id="searchInput" type="search" placeholder="Search by title, topic, or type">
+      </div>
+
+      <div class="form-group">
+        <label for="subject">Subject</label>
+        <select id="subject">
+          <option value="all">All Subjects</option>
+          <option value="math">Math</option>
+          <option value="science">Science</option>
+          <option value="english">English</option>
+          <option value="social studies">Social Studies</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="grade">Grade</label>
+        <select id="grade">
+          <option value="all">All Grades</option>
+          <option value="1">Grade 1</option>
+          <option value="2">Grade 2</option>
+          <option value="3">Grade 3</option>
+          <option value="4">Grade 4</option>
+        </select>
+      </div>
+
+      <button id="filterBtn" type="submit">Search Resources</button>
+    </form>
+
+    <p id="resultCount" class="result-count" aria-live="polite"></p>
+    <section id="results" class="results-grid" aria-live="polite" aria-label="Search Results"></section>
+  </section>
+</main>
+
+<footer>
+  <p>LessonLink prototype built with HTML, CSS, JavaScript, JSON filtering, and accessibility-first design.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
