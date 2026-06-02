@@ -36,4 +36,4 @@ LessonLink is a responsive and accessibility-focused educational resource platfo
 
 ## Live Demo
 
-Add your GitHub Pages link here after deployment.
+https://github.com/khushiixpatell/teacher-portal/deployments/github-pages
